@@ -1,0 +1,115 @@
+/* dafdfas
+ generico selecotores de etiqueta: 
+ forma en la cual llamamos a las etiquetas, 
+ por su nombre de etiqueta, para modificar 
+ los estilos
+ 
+ TODAS LA ETIQUETAS QUE SEAN X, VAN A TENER ESTAS PERSONALIZACIONES
+ *
+ si no quiero que todas las eituqetas A sean fuccinas
+ debo hacer una clase que pise eso generico.
+ 
+ puedo definir propiedades genericas y despues hacer modificaciones de estilo con una clase
+
+ modificacion generica: selector de etiqueta
+ /
+body {
+    background-color: blueviolet;
+    background-color: brown; 
+} /* estilo en cascada lo anterior se pisa, queda el ultimo */
+
+body{
+    background-color: blueviolet;
+    background-color: brown;
+
+}
+
+/* me paro sobre body y 
+veo selector de especificidad
+la especificidad es un calculo se mide en base a numeros
+1 es la menor especificidad
+10 media , la de la clase
+100 es maxima por id
+
+un selector de etiqueta : todos los elementos que sea div.. etces un selector generico
+un id pisa a la etiqueta
+
+*/
+h1{
+    color: white;
+    background-color: red;
+}
+p{
+    color: lightskyblue;
+}
+
+/*SELECTORES DE CLASES a todos los elementos
+que tengan esa clase le aplica ese estilo
+   especifico estilo
+IR A LA etiqueta que estoy interesada */
+.parrafo-color {
+    color: palevioletred;
+}
+
+/* SELECTOR DE IDENTIFICADOR a elemento qu tengan el id unico
+aplicales estos estilos 
+id no se puede repetir
+snake case:
+parrafo_unico
+
+camel case:
+parrafounico*/
+
+#parrafo-unico { /* asi se llama por identificador */
+    color: coral
+}
+
+/* Manera de escribir las clases:
+1 kebab case:
+parrafo_unico
+
+2 snake case:
+parrafo-unico
+
+3 camel case:
+parrafoUnico
+/* 
+sintaxis de como escribimos nombres de clases yy nombres de id
+
+kebabcase:
+parrafo_unico
+
+snake case:
+parrafo_unico
+
+camel case:
+parrafoUnico
+
+
+son las formas en que escribimos los nombres de clases o id
+
+
+class lo puedo usar en varios elementos
+el id no, es una sola vez para un solo elemento, no puedo
+poner 2 etiquetas con el mismo id*/
+/* alt+z para que se vea todo
+lo que define a un archivo es la terminacion del mismo aca es .css por convencion style.css
+vinculo el archivo css
+hago una referencia que diga que este elemento se relaciona con este otro elementro, a travez de la etiqueta LINK
+
+/* Selectores de clase:
+es la forma en la cual llamamos a las etiquetas por su nombre de eitqueta para modificar los estilos
+
+para usar una clase
+1. atributo class en etiqueta de html
+2. llamarla con el nombre, en css va a tener un punto .parrafo
+3. .parrafo es espeficido de la etiquetas que tengan el color
+
+especificidad: se habla del corazon uso y palicacion del elenguajo
+la especificidad define que tan generico
+o especifico es el elmento que se esta hablando
+mas especificidad sobre los elementos, mas se pisa el estilo generico anterior
+
+
+*/
+

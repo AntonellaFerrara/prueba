@@ -1,0 +1,50 @@
+.container {
+    background-color: orange;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0; /* ocupa toda la pantalla */
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+#subtitulo-contacto {
+    color: brown;
+}
+
+.subtitulo-mediano {
+    font-size: 18px;
+    color:blue;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 50px ; /*interlineado*/
+
+    /*si quiero modificar footer lo puedo llamar por una clase, un identificador o por el elemntos mimo ya que hay un solo footer
+     se aconseja agregar una clase*/
+}
+.pie-de-pagina {
+    background-color: indianred;
+
+}
+.subtitulo-footer {
+    background-color:yellow ;
+}
+ul{
+    background-color:#FFBF00 ;
+}
+li{
+    background-color: blue;
+    font-size: 25px;
+}
+
+h1 {
+    color: #ff69b4;
+    font-weight: 600; /*ancho*/
+    font-style: italic; /*estilo inclinado a la derecha*/
+    text-align: center; /*donde  quiero que este centro, justificado , izq, der*/
+}
+/*nombres de clases descriptibas para primer tp imortante*/
